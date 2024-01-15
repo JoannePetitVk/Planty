@@ -1,0 +1,311 @@
+body * {
+  font-family: "Syne", sans-serif;
+}
+/* On applique un gris plus clair sur les paragraphes */
+p {
+  color: #000000;
+}
+
+/* Logo */
+
+.menu-logo {
+  width: 192px;
+  height: 19px;
+  display: flex;
+  float: left;
+  padding-top: 10px;
+  padding-left: 20px;
+  margin-top: 16px;
+}
+
+/* Header menu de navigation */
+ul .nav-links a {
+  width: 100%;
+}
+
+.nav-links > * {
+  margin: 0;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  text-decoration: none;
+  color: #000000;
+  margin-top: -5px;
+}
+
+.nav-links a {
+  display: flex;
+  width: 180px !important;
+  height: 60px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  line-height: 70px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: #000000;
+  font-weight: bold;
+}
+
+.nav-links .active a {
+  background-color: #dc9f96;
+  color: #ffffff;
+}
+
+.nav-links .active a:hover {
+  background-color: #c02e44;
+  font-weight: normal;
+}
+
+ul,
+li {
+  margin: 3.8rem 0rem 0rem 0rem;
+}
+
+/* Formulaire de contact */
+.bouton-envoyer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 90px;
+  padding-left: 25px;
+  text-decoration: none !important;
+}
+
+div.bouton-envoyer p :hover {
+  text-decoration: none !important;
+}
+
+p {
+  height: 100px;
+  margin-top: 30px;
+}
+
+span textarea {
+  height: 150px;
+}
+
+/* Formulaire de commande */
+
+div.form {
+  height: 430px;
+  margin-bottom: 40px;
+  padding-right: 0px;
+}
+
+.informations {
+  width: 47%;
+  float: left;
+  margin-right: 53px;
+}
+
+.livraison {
+  width: 47%;
+  float: right;
+}
+
+/* titre formulaire*/
+h3 {
+  color: white;
+  margin: 0px;
+  font-size: 30px;
+}
+
+/* champs de saisie formulaire */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="url"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="week"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+textarea {
+  border-radius: 6px;
+  height: 60px;
+  width: 90%;
+}
+
+/* bouton commander */
+button,
+.button,
+.faux-button,
+.wp-block-button__link,
+.wp-block-file .wp-block-file__button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.bg-accent,
+:root .has-accent-background-color,
+.comment-reply-link {
+  border-radius: 6px;
+  background-color: #e0b9b4 !important;
+  width: 198px;
+}
+
+div .bouton-commander {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 25px;
+}
+
+div .bouton-commander p :hover {
+  background-color: #c02e44 !important;
+  text-decoration: none !important;
+}
+
+/* FOOTER */
+header-footer-group .header-footer- {
+  display: none;
+}
+
+footer {
+  width: 100% !important;
+  text-align: center;
+  padding: 20px;
+  height: 60px;
+  background-color: #ffffff;
+}
+
+.footer a {
+  padding: 20px;
+  color: #000000 !important;
+}
+/*@media only screen and (max-width: 768px) tablette à partir de 768 pixels*/
+@media only screen and (max-width: 900px) {
+  /* header */
+
+  .nav-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .nav-links a {
+    width: 150px;
+  }
+
+  .nav-links li {
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+
+  /* formulaire de commande */
+  div.form {
+    height: 110px;
+    margin-bottom: 80px;
+    flex-direction: column;
+    padding-top: 50px;
+    margin-right: 20px;
+  }
+
+  .informations {
+    width: 45%;
+    float: left;
+    padding-right: 0px;
+  }
+
+  .livraison {
+    width: 45%;
+    float: right;
+  }
+
+  /* titre formulaire*/
+  h3 {
+    font-size: 25px;
+    margin: 0px;
+  }
+
+  /* champs de saisie formulaire */
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  input[type="url"],
+  input[type="date"],
+  input[type="month"],
+  input[type="time"],
+  input[type="datetime"],
+  input[type="datetime-local"],
+  input[type="week"],
+  input[type="number"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="color"],
+  textarea {
+    height: 60px;
+    width: 100%;
+  }
+
+  /* bouton commander */
+  div .bouton-commander {
+    margin-left: 50px;
+    display: inline-flex;
+    margin-top: 40px;
+    margin-left: 250px;
+  }
+}
+
+/*@media only screen and (max-width: 320px) téléphone à partir de 320 pixels*/
+@media only screen and (max-width: 320px) {
+  /* header */
+  .nav-menu .nav-links {
+    display: block;
+    justify-content: center;
+    flex-direction: column;
+    float: right;
+  }
+
+  .nav-links a {
+    display: flex;
+    width: 150px !important;
+  }
+
+  /* Logo */
+
+  .menu-logo {
+    width: 120px;
+    height: 14px;
+    padding-top: 14px;
+    padding-left: 15px;
+    margin-top: 7px;
+  }
+
+  /* formulaire de commande */
+  div.form {
+    height: 770px;
+  }
+
+  .informations {
+    width: 100%;
+    float: none;
+    padding-left: 20px;
+  }
+
+  .livraison {
+    width: 100%;
+    float: none;
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+
+  /* bouton commander */
+  div .bouton-commander {
+    margin-left: 60px;
+    display: inline-flex;
+    margin-top: 0px;
+  }
+}
